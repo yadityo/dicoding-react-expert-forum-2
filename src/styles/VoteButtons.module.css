@@ -1,0 +1,4 @@
+.wrap { display: flex; gap: 0.5rem; }
+.button { border: 1px solid var(--line); background: #fff; border-radius: 999px; padding: 0.35rem 0.65rem; color: #4b5563; }
+.activeUp { border-color: var(--up); color: var(--up); background: #fff7ed; }
+.activeDown { border-color: var(--down); color: var(--down); background: #fef2f2; }

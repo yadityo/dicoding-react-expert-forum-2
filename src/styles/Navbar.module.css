@@ -1,0 +1,8 @@
+.header { border-bottom: 1px solid var(--line); background: rgba(255,255,255,0.92); backdrop-filter: blur(8px); position: sticky; top: 0; z-index: 5; }
+.nav { max-width: 980px; margin: 0 auto; padding: 0.85rem 1rem; display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+.brand { font-weight: 700; font-size: 1.2rem; }
+.links, .auth { display: flex; gap: 0.9rem; align-items: center; }
+.link { color: var(--muted); }
+.userName { color: var(--muted); font-size: 0.95rem; }
+.auth button { border: 1px solid var(--line); background: var(--surface); padding: 0.35rem 0.6rem; border-radius: 20px; }
+@media (max-width: 768px) { .nav { flex-wrap: wrap; } }
