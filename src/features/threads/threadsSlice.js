@@ -72,18 +72,18 @@ export const toggleThreadVote = createAsyncThunk(
   },
 );
 
-function applyVote(thread, userId, voteType) {
-  thread.upVotesBy = thread.upVotesBy.filter((id) => id !== userId);
-  thread.downVotesBy = thread.downVotesBy.filter((id) => id !== userId);
+// function applyVote(thread, userId, voteType) {
+//   thread.upVotesBy = thread.upVotesBy.filter((id) => id !== userId);
+//   thread.downVotesBy = thread.downVotesBy.filter((id) => id !== userId);
 
-  if (voteType === 1) {
-    thread.upVotesBy.push(userId);
-  }
+//   if (voteType === 1) {
+//     thread.upVotesBy.push(userId);
+//   }
 
-  if (voteType === -1) {
-    thread.downVotesBy.push(userId);
-  }
-}
+//   if (voteType === -1) {
+//     thread.downVotesBy.push(userId);
+//   }
+// }
 
 const threadsSlice = createSlice({
   name: 'threads',
